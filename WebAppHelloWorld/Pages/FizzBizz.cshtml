@@ -1,0 +1,32 @@
+﻿@page
+@model WebAppHelloWorld.Pages.FizzBizzModel
+@{
+    ViewData["Title"] = "FizzBizz";
+}
+
+<h2>FizzBizz for @Model.Number</h2>
+<p>
+    @*@Model.Message*@
+    <table class="table table-striped">
+        @foreach (var item in Model.Numbers)
+        {
+            <tr>
+                <th>@item</th>
+            </tr>
+        }
+    </table>
+    @*<ul class="list-unstyled">
+            @foreach (var item in Model.Numbers)
+            {
+                <li>@item</li>
+            }
+        </ul>*@
+
+    @*foreach (var item in Model.Numbers)
+    {
+        <br /> @item
+    }*@
+    @*<p>@item</p>*@
+
+</p>
+

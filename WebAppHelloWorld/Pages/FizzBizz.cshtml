@@ -4,10 +4,9 @@
     ViewData["Title"] = "FizzBizz";
 }
 
-<h2>FizzBizz for @Model.Number</h2>
+<h2 class="bg-primary">FizzBizz for @Model.Number</h2>
 <p>
-    @*@Model.Message*@
-    <table class="table table-striped">
+    <table class="table table-striped text-primary bg-success">
         @foreach (var item in Model.Numbers)
         {
             <tr>
@@ -23,9 +22,9 @@
         </ul>*@
 
     @*foreach (var item in Model.Numbers)
-    {
-        <br /> @item
-    }*@
+        {
+            <br /> @item
+        }*@
     @*<p>@item</p>*@
 
 </p>
